@@ -1,2 +1,2 @@
-# CS146Forum
-Group 9's project
+# Stevens Forum
+Group 9's project for Web Programming 
