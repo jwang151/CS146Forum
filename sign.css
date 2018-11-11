@@ -1,0 +1,27 @@
+#runner{
+    text-align: center;
+    font-size: 30;
+}
+button{
+    position: absolute;
+    top:200px;
+    left:200px;
+}
+@keyframes mine{
+	0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    75% {background-color: green;}
+    100% {background-color: red;}
+}
+.cool{
+	background-color: white;
+	animation-name: mine;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+.newer{
+	background-color: blue;
+	font-size: 30px;
+
+}

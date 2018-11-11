@@ -1,0 +1,125 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*:not(a) {
+    color: #333;
+}
+
+body {
+    margin: 10px auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    padding: 14px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px rgba(0,0,0,.2) solid;
+	background-color: #7FDBFF;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+ul {
+	display: flex;
+    list-style-type: none;
+}
+
+li a:link{
+	font-weight: bold;
+	border: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0,0,0,.85);
+	font-size: 20px;
+	padding: 5px 5px 5px 5px;
+	background-color: #7FDBFF;
+	text-decoration: none;
+}
+
+li a:visited{
+	font-weight: bold;
+	border: 1px solid black;
+    box-shadow: 0 2px 4px rgba(0,0,0,.85);
+	font-size: 20px;
+	padding: 5px 5px 5px 5px;
+	background-color: #7FDBFF;
+	text-decoration: none;
+}
+
+li a:hover{
+	background-color: #6080b0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0);
+}
+
+.thread {
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.post {
+    padding: 10px;
+}
+
+.post img {
+    height: 180px;
+}
+
+.post:nth-child(n+2) {
+    border-top: 1px rgba(0,0,0,.2) solid;
+}
+
+#renchon {
+    height: 85px;
+    padding: 5px 15px;
+}
+
+@media only screen and (min-width: 801px) {
+    header{
+		flex-direction: row;
+	}
+	
+	body {
+		width: 100%;
+        max-width: 85%;
+    }
+	ul{
+		justify-content: space-around;
+		flex-direction: row;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+    header{
+		flex-direction: row;
+	}
+	
+	body {
+        margin: 10px;
+    }
+
+    header {
+        justify-content: center;
+    }
+	ul{
+		justify-content: space-around;
+		flex-direction: column;
+		line-height: 3;
+		text-wrap: wrap;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+    header{
+		flex-direction: column;
+	}
+	
+	#about {
+        line-height: 1.5;
+    }
+	ul{
+		justify-content: space-around;
+		flex-direction: column;
+		line-height: 3;
+		text-wrap: wrap;
+	}
+}
