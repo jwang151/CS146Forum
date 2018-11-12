@@ -1,0 +1,49 @@
+a{
+  text-decoration: none;
+    color:firebrick;
+}
+a:hover{
+    color:red;
+}
+
+html{
+    background-color: white;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+   
+    a{
+        padding-right: 10px;
+        font-size:25px;
+    }
+    img{
+        width:12%;
+        height:12%;
+    }
+    h1{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:480px)
+{
+    a{
+        font-size: 20px;
+        padding-right: 1px;
+    }
+    img{
+        width: 12%;
+        height: 12%;
+        margin:auto;
+    }
+    h1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 769px)
+{
+    a{
+        padding-right: 50px;
+    }
+    
+}
